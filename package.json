@@ -8,7 +8,7 @@
     "dev": "docz dev",
     "build": "docz build",
     "serve": "docz build && docz serve",
-    "deploy": "PUBLIC_URL=https://ethereum.github.io/js-organization/ docz build && gh-pages -d './.docz/dist'"
+    "deploy": "DOCZ_BASE=/js-organization/ docz build && gh-pages -d './.docz/dist'"
   },
   "dependencies": {
     "docz": "^2.1.1",
