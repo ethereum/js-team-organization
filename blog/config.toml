@@ -1,0 +1,4 @@
+baseURL = "https://js.ethereum.org"
+languageCode = "en-us"
+title = "EF JavaScript Team | Blog"
+theme = "hugo-theme-chunky-poster"
