@@ -5,7 +5,7 @@ On this page you can find our team roadmap.
 Roadmap updates are done throughout the year and try to reflect our current state of planning and thinking ahead.
 
 This "live" roadmap document is based on the yearly roadmap submission we have done within the EF, see the following
-list for an overview on the initial roadmaps from the respective years.
+list for an overview of the initial roadmaps from the respective years.
 
 - [2021](./EF2021.md)
 
@@ -91,5 +91,4 @@ Ethers:
 - [x] Ethers: EIP-2718 & EIP-2930 Support, Release [v5.1.0](https://github.com/ethers-io/ethers.js/releases/tag/v5.1.0)
 - [x] Ethers: Ecosystem coordination for EIP-2930 (Etherscan, Alchemy and Pocket)
 - [x] Ethers: v6 Planning
-
 
