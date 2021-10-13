@@ -19,44 +19,52 @@ This planning is based on the following theoretical assumptions on an outer time
 
 General Library Work:
 
+- [ ] EthereumJS: final hardening of VM by client (running (hopefully) all mainnet), Amazon EC2 server
 - [ ] EthereumJS: continued performance work (VM, other), monorepo [performance-related issues](https://github.com/ethereumjs/ethereumjs-monorepo/issues?q=is%3Aopen+is%3Aissue+label%3A%22type%3A+performance%22)
+- [ ] EthereumJS: Client Reliability and Sync Improvements
+- [ ] EthereumJS: BigInt strategy, eventual first round of low-level support (BigInt input)
 
 Hardforks / Releases:
 
-- [ ] EthereumJS: Shanghai EIP related work / Shanghai release
+- [ ] EthereumJS: Shanghai EIP related work (depending on progress of EIP specs)
+- [ ] EthereumJS -> Breaking Releases: VM dynamic gas cost [refactor](https://github.com/ethereumjs/ethereumjs-monorepo/issues/1169), Blockchain unsettled promises (PR [#1201](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1201)), other changes (suggestion: concentrate on VM, Blockchain this round, do others later)
 
 Dedicated Projects:
 
-- [ ] EthereumJS Client: [The Merge](https://github.com/ethereum/eth2.0-specs#merge) testnet participation
-- [ ] EthereumJS: Verkle Tree Library Integration I (VM, StateManager) TBD
+- [ ] EthereumJS: Stable Merge Releases (Client, Blockchain, Block, Common)
+- [ ] EthereumJS: [Verkle Tree](https://notes.ethereum.org/@vbuterin/verkle_and_state_expiry_proposal) WASM compile from Rust (Geth cooperation)
+- [ ] EthereumJS: EthereumJS Client Verkle Proof Consumption + Stateless execution, first prototype (Geth cooperation)
+- [ ] EthereumJS: [Portal Network](https://github.com/ethereum/stateless-ethereum-specs/blob/master/portal-network.md), first specific selected protocol implementations
+
+Ethers:
+
+- [ ] Ethers: ethers/v6, with an emphasis on using more moderns JavaScript features (ES5), more comprehensive TypeScript and ancillary packages (enabling easier external contributors)
 
 ## Q3 2021
 
 General Library Work:
 
-- [ ] EthereumJS: continued performance work (VM, other), monorepo [performance-related issues](https://github.com/ethereumjs/ethereumjs-monorepo/issues?q=is%3Aopen+is%3Aissue+label%3A%22type%3A+performance%22)
-- [ ] EthereumJS: BigInt strategy, eventual first round of low-level support (BigInt input)
-- [ ] EthereumJS: Stateless work with some focus on VM stateless execution and improved witness support/integration (eventually divide between Q3/Q4)
+- [x] EthereumJS: continued performance work (VM, other), monorepo [performance-related issues](https://github.com/ethereumjs/ethereumjs-monorepo/issues?q=is%3Aopen+is%3Aissue+label%3A%22type%3A+performance%22)
+- [x] EthereumJS: Stateless work with some focus on VM stateless execution and improved witness support/integration (eventually divide between Q3/Q4)
 - [x] EthereumJS: Initial L2 Support (Arbitrum, Polygon, xDai), PR [#1317](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1317)
-- [ ] EthereumJS Client: Sync improvements / basic tx pool
+- [x] EthereumJS Client: Sync improvements / basic tx pool
+- [x] EthereumJS Client: Miner / Local dev testnets
 
 Hardforks / Releases:
 
-- [ ] EthereumJS: [EIP-3540](https://eips.ethereum.org/EIPS/eip-3540) EVM Object Format (EOF) v1 Implementation (likely Shanghai)
-- [ ] EthereumJS: Shanghai EIP related work
-- [ ] EthereumJS -> Breaking Releases: VM dynamic gas cost [refactor](https://github.com/ethereumjs/ethereumjs-monorepo/issues/1169), Blockchain unsettled promises (PR [#1201](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1201)), other changes (suggestion: concentrate on VM, Blockchain this round, do others later)
+- [x] EthereumJS Client: First stable v0.1 release
+- [x] EthereumJS: Improved Custom Chain Support
 
 Dedicated Projects:
 
-- [ ] EthereumJS Client: [The Merge](https://github.com/ethereum/eth2.0-specs#merge) structural integration (Client, other)
-- [ ] EthereumJS: [Portal Network](https://github.com/ethereum/stateless-ethereum-specs/blob/master/portal-network.md), early experiments and PoC implementations (handshake for a selected protocol)
-- [ ] EthereumJS: [Verkle Tree](https://notes.ethereum.org/@vbuterin/verkle_and_state_expiry_proposal) implementation TBD
+- [x] EthereumJS Client: [The Merge](https://github.com/ethereum/eth2.0-specs#merge) structural integration (Client, other)
+- [x] EthereumJS Client: [The Merge](https://github.com/ethereum/eth2.0-specs#merge) testnet participation (Interop event), see e.g. [Twitter](https://twitter.com/ralxzryan/status/1445046796305289221)
+- [x] EthereumJS: [Portal Network](https://github.com/ethereum/stateless-ethereum-specs/blob/master/portal-network.md), early experiments and PoC implementations (handshake for a selected protocol)
 
 Ethers:
 
-- [ ] Ethers: ethers/v6, with an emphasis on using more moderns JavaScript features (ES5), more comprehensive TypeScript and ancillary packages (enabling easier external contributors)
-- [ ] Ethers: ethers issue and PR burn-down, closing issues and moving discussion issues to the discussions feature
-- [ ] Ethers: new website, adding the new tools, starting with the Playground and Toolbox (stretch goal of the Wallet w/ transaction composer)
+- [x] Ethers: ethers issue and PR burn-down, closing issues and moving discussion issues to the discussions feature
+- [x] Ethers: new website, adding the new tools, starting with the Playground and Toolbox (stretch goal of the Wallet w/ transaction composer)
 
 ## Q2 2021
 
