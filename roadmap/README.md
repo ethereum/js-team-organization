@@ -19,22 +19,22 @@ This planning is based on the following theoretical assumptions on an outer time
 
 General Library Work:
 
-- [ ] EthereumJS: final hardening of VM by client (running (hopefully) all mainnet), Amazon EC2 server
-- [ ] EthereumJS: continued performance work (VM, other), monorepo [performance-related issues](https://github.com/ethereumjs/ethereumjs-monorepo/issues?q=is%3Aopen+is%3Aissue+label%3A%22type%3A+performance%22)
-- [ ] EthereumJS: Client Reliability and Sync Improvements
-- [ ] EthereumJS: BigInt strategy, eventual first round of low-level support (BigInt input)
+- [x] EthereumJS: continued hardening (bug resilience, performance) of VM by client, mainnet progress, [Shanghai Attack Work](https://github.com/ethereumjs/ethereumjs-monorepo/issues/1536)
+- [x] EthereumJS: continued performance work (VM, other), e.g. [VM](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1570), [Tx](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1532)
+- [x] EthereumJS: Client Reliability and Sync Improvements, e.g. [here](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1543)
 
 Hardforks / Releases:
 
-- [ ] EthereumJS: Shanghai EIP related work (depending on progress of EIP specs)
-- [ ] EthereumJS -> Breaking Releases: VM dynamic gas cost [refactor](https://github.com/ethereumjs/ethereumjs-monorepo/issues/1169), Blockchain unsettled promises (PR [#1201](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1201)), other changes (suggestion: concentrate on VM, Blockchain this round, do others later)
+- [x] EthereumJS -> Non-Breaking Releases: VM dynamic gas cost [refactor](https://github.com/ethereumjs/ethereumjs-monorepo/issues/1169) (better Hardhat gas cost reporting), StateManager [refactor](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1548), [non-HF EIPs](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1568) (EIP-3607, EIP-2681)
+- [x] EthereumJS ArrowGlacier HF [Releases](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1555)
+- [x] EthereumJS Better Optimism L2 Support
 
 Dedicated Projects:
 
-- [ ] EthereumJS: Stable Merge Releases (Client, Blockchain, Block, Common)
-- [ ] EthereumJS: [Verkle Tree](https://notes.ethereum.org/@vbuterin/verkle_and_state_expiry_proposal) WASM compile from Rust (Geth cooperation)
-- [ ] EthereumJS: EthereumJS Client Verkle Proof Consumption + Stateless execution, first prototype (Geth cooperation)
-- [ ] EthereumJS: [Portal Network](https://github.com/ethereum/stateless-ethereum-specs/blob/master/portal-network.md), first specific selected protocol implementations
+- [x] EthereumJS: "The Merge" Pithos, Kintsugi Testnet Releases (Client, Blockchain, Block, Common)
+- [x] EthereumJS: [Verkle Tree](https://notes.ethereum.org/@vbuterin/verkle_and_state_expiry_proposal) WASM compile from Rust (Geth cooperation)
+- [x] EthereumJS: EthereumJS Client Verkle Proof Consumption + Stateless execution, first prototype (Geth cooperation)
+- [x] EthereumJS: [Portal Network](https://github.com/ethereum/stateless-ethereum-specs/blob/master/portal-network.md) Structural Project Setup (Repositories, team planning)
 
 Ethers:
 
