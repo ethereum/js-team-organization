@@ -8,11 +8,12 @@ This "live" roadmap document is based on the yearly roadmap submission we have d
 list for an overview of the initial roadmaps from the respective years.
 
 - [2021](./EF2021.md)
+- [2022](./EF2022.md)
 
 This planning is based on the following theoretical assumptions on an outer timeline (note that there is no evidence or public statements that these dates will happen to any extend):
 
-- Shanghai HF happening in Q4 2021
-- "The Merge" happening spring 2022 (or later)
+- "The Merge" happening in spring 2022
+- Shanghai HF happening around summer 2022
 - Stateless happening somewhat after "The Merge"
 
 ## Q4 2021
