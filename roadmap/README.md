@@ -16,6 +16,55 @@ This planning is based on the following theoretical assumptions on an outer time
 - Shanghai HF happening around summer 2022
 - Stateless happening somewhat after "The Merge"
 
+## Q1 2022
+
+### DevEx & VM
+
+- [x] VM Support Feasibility Analysis for EVM equivalent L2 Solutions (e.g. Optimism)
+- [x] VM Modularization (Custom Opcodes, Precompiles, State) (L2 Support)
+- [x] 1 additional VM/client hire (Gajinder Singh)
+- [x] Breaking Release Preparation (Summer 2022): BigInt Refactor
+- [x] Breaking Release Preparation (Summer 2022): Noble Crypto Library Integration
+- [x] Breaking Release Preparation (Summer 2022): StateManager extraction
+
+### Hardforks & EIPs
+
+- [x] Production-ready Merge releases of VM and other libraries (Kiln v2.1 specs)
+- [x] First Shanghai HF EIP implementations (scope still open)
+- [x] EIP-3855: PUSH0 instruction (Shanghai CFI)
+- [x] EIP-3860: Limit and meter initcode (Shanghai CFI)
+- [x] EIP-1153: Transient Storage Opcodes
+- [x] EIP-3540: EVM Object Format (EOF) v1 (Shanghai CFI)
+- [x] EIP-3670: Code Validation (Shanghai CFI)
+
+### Research & Client
+
+- [x] Client Mainnet Sync Improvements (more robust Fetcher logic)
+- [x] Merge Kiln testnet support
+- [x] First EthereumJS (+ Lodestar) block proposal on public testnet (Kiln)
+- [x] Light Client Work (PoC) with Lodestar (VM/Trie Proof functionality), e.g. [here](https://github.com/ChainSafe/eth2-light-client-demo/pull/28)
+- [x] Hive (https://github.com/ethereum/hive) Test Framework Integration 
+- [x] Verkle Demo Network PoC (Stateless block execution EthereumJS Client) (Project with Geth, Guillaume Ballet, others)
+
+### Portal Network
+
+- [x] Structural Setup (Monorepo, Software Tests, CI, Code Cleanup)
+- [x] Robustness of the networking layer (`portalnetwork` module)
+- [x] Draft implementation for 1-2 sub networks (e.g. state / history)
+- [x] Stable browser networking topology
+- [x] Integration in semi-public test network with other clients (Fluffy, Trin)
+- [x] Portalnetwork block explorer PoC
+- [x] Demo integrations with Android and iOS
+- [x] 1-2 additional hires for the project
+
+### Ethers.js
+
+- [x] Ethers v6 release preparation (release planned April/May 2022)
+- [x] EIP-2098 compact signatures 
+- [x] EIP-2544 ENS Wildcard support
+- [x] Better IPFS support
+
+
 ## Q4 2021
 
 General Library Work:
