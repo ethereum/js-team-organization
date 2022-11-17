@@ -16,6 +16,36 @@ This planning is based on the following theoretical assumptions on an outer time
 - Shanghai HF happening around summer 2022
 - Stateless happening somewhat after "The Merge"
 
+## Q4 2022 (incomplete)
+
+### DevEx & VM
+
+- [x] Dedicated RPC-backed EthersStateManager for easier Mainnet Transaction Debugging
+
+### Hardforks & EIPs
+
+- [x] EIP-4895 Beacon Chain Withdrawals Support (Shanghai HF)
+- [x] EIP-3540 / EIP-3670 EVM Object Format (EOF) Test/Specification Work
+
+### Research, Client & Testnets
+
+- [x] Early Pre-Shanghai EthereumJS/Lodestar-based Shandong Testnet (https://shandong.ethdevops.io/) 🎉
+- [x] Client UX-focused RPC Improvements (eth_gasPrice, eth_feeHistory,...)
+- [x] Lodestar/EthereumJS CL/EL Client Combination Live Testing and Optimization
+- [x] Structural Dynamic Testnet Setup Automation / Post-Merge Testnet Improvements
+
+### Portal Network
+
+- [x] History Network Protocol Spec Update (Accumulator/ChainID/Content-Key changes)
+- [x] Continued Browser Client UX Improvments
+- [x] Database Pruning for Subprotocols
+- [x] UTP Protocol Congestion Control Refactor
+
+### Ethers.js
+
+- [x] Ethers v6 Release Candidate
+- [x] Ethers v6 Release Documentation Updates
+
 ## Q3 2022
 
 ### DevEx & VM
