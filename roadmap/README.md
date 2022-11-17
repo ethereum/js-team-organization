@@ -16,6 +16,45 @@ This planning is based on the following theoretical assumptions on an outer time
 - Shanghai HF happening around summer 2022
 - Stateless happening somewhat after "The Merge"
 
+## Q3 2022
+
+### DevEx & VM
+
+- [x] VM/Monorepo Breaking Release Finalization Work (Community Feedback)
+- [x] Default Merge HF for all Monorepo Libraries
+- [x] Trie Library Generalization/Modularization (DB / Hash Function)
+- [x] UX focused Trie Library Refactor (Renamings / Customizability)
+- [x] Monorepo Package NPM Dependency Reduction Part I (security)
+- [x] Monorepo Adopt Stricter Code Formatting Rules (Linting) (security)
+- [x] GitPOAP Cooporation EthereumJS Monorepo
+- [x] Monorepo Geth Genesis Format Compatibility (VM/Tx/Block/Client)
+- [x] Monorepo Final Breaking Releases 🎉
+
+### Hardforks & EIPs
+
+- [x] Merge HF Spec Finalization
+- [x] Sepolia Merge HF Integration
+- [x] Merge HF Community Integration Support (Hardhat, Ganache, Other)
+
+### Research & Client
+
+- [x] SNAP Protocol Base Layer Implementation (Networking/devp2p)
+- [x] Client SNAP Protocol Synchronizer Draft
+
+### Portal Network
+
+- [x] Deeper Header Accumulator Integration (History -> getBlockByNumber, Header Proof Validation)
+- [x] Refactored RPC Method Exposure Base Layer
+- [x] First Draft of `portalnetwork` `ethers` compatible `JsonRpcProvider` integration 🎉
+- [x] Improved Portal Network Experimentation Console (Browser Client)
+- [x] History Network Receipt Integration
+
+### Ethers.js
+
+- [x] Integrated new ENS normalization specification
+- [x] EIP-712 Type Exports
+- [x] Continued Improved L2 Integration (Arbitrum/Optimism)
+
 ## Q2 2022
 
 ### DevEx & VM
@@ -58,6 +97,7 @@ This planning is based on the following theoretical assumptions on an outer time
 ### Ethers.js
 
 - [x] Focus on tooling, especially on the playground and the toolkit
+- [x] Improved L2 Integration (Optimism/Matic)
 
 ## Q1 2022
 
