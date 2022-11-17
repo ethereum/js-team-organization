@@ -16,6 +16,49 @@ This planning is based on the following theoretical assumptions on an outer time
 - Shanghai HF happening around summer 2022
 - Stateless happening somewhat after "The Merge"
 
+## Q2 2022
+
+### DevEx & VM
+
+- [x] VM Improved L2 Modularization (custom Precompiles, separated VM/EVM)
+- [x] Expanded Chain Customizability (L2/Others) (extracted StateManager, encapsulated Blockchain consensus)
+- [x] Selected VM Performance Optimizations (not as far reaching as planned)
+- [x] Wide-reaching Code Clean-Up Work and Deprecations on various Libraries (Breaking Release Preparation)
+- [x] VM Native JavaScript BigInt Integration (performance / security)
+- [x] Crypto Primitives (Hash, Signature) Library Switch to modern audited Library (Noble) (security)
+- [x] Trie Library Database Abstraction
+- [x] Monorepo Package Unification (consistent @ethereumjs namespace)
+- [x] Monorepo Breaking Releases (Beta 1)
+
+### Hardforks & EIPs
+
+- [x] Merge HF Spec Update Implementation (Engine API / Beacon Sync)
+- [x] EIP-5133 GrayGlacier HF Support (Difficulty Bomb, Merge Preparation)
+- [x] EIP-3074 Authcall Implementation 
+
+### Research & Client
+
+- [x] Client "Grown-Up" Transaction Pool Integration
+- [x] Both lightweight sync + verkle tree implementation postponed (breaking release focus)
+
+### Portal Network
+
+- [x] Initial Android App (Portal Network PoC for Mobile Context)
+- [x] Header Gossip Subnetwork Integration 
+- [x] Stable communication with other clients (Fluffy/Trin) for sub networks from Q1
+- [x] Rendevous Protocol Integration (ENR request along NAT/Firewall issues)
+- [x] External ChainSafe DiscV5 library integration
+- [x] Browser-Support Analysis and PoC (Web-Storage)
+- [x] Specification Implementation Refactoring (dedicated Protocol class)
+- [x] Header Accumulator Spec Implementation (History Network)
+- [x] First Canonical Indices Protocol version
+- [x] Ultralight Electron App
+- [x] `portalnetwork` library API PoC (`getBlockByNumber` RPC Call)
+
+### Ethers.js
+
+- [x] Focus on tooling, especially on the playground and the toolkit
+
 ## Q1 2022
 
 ### DevEx & VM
