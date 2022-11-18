@@ -10,11 +10,119 @@ list for an overview of the initial roadmaps from the respective years.
 - [2021](./EF2021.md)
 - [2022](./EF2022.md)
 
-This planning is based on the following theoretical assumptions on an outer timeline (note that there is no evidence or public statements that these dates will happen to any extend):
+## Q4 2022 (incomplete)
 
-- "The Merge" happening in spring 2022
-- Shanghai HF happening around summer 2022
-- Stateless happening somewhat after "The Merge"
+### DevEx & VM
+
+- [x] Dedicated RPC-backed EthersStateManager for easier Mainnet Transaction Debugging
+
+### Hardforks & EIPs
+
+- [x] EIP-4895 Beacon Chain Withdrawals Support (Shanghai HF)
+- [x] EIP-3540 / EIP-3670 EVM Object Format (EOF) Test/Specification Work
+
+### Research, Client & Testnets
+
+- [x] Early Pre-Shanghai EthereumJS/Lodestar-based Shandong Testnet (https://shandong.ethdevops.io/) 🎉
+- [x] Client UX-focused RPC Improvements (eth_gasPrice, eth_feeHistory,...)
+- [x] Lodestar/EthereumJS CL/EL Client Combination Live Testing and Optimization
+- [x] Structural Dynamic Testnet Setup Automation / Post-Merge Testnet Improvements
+- [x] Verkle Trie "Stateless" State Management and Verkle Blocks Processing
+
+### Portal Network
+
+- [x] History Network Protocol Spec Update (Accumulator/ChainID/Content-Key changes)
+- [x] Continued Browser Client UX Improvments
+- [x] Database Pruning for Subprotocols
+- [x] UTP Protocol Congestion Control Refactor
+
+### Ethers.js
+
+- [x] Ethers v6 Release Candidate
+- [x] Ethers v6 Release Documentation Updates
+
+## Q3 2022
+
+### DevEx & VM
+
+- [x] VM/Monorepo Breaking Release Finalization Work (Community Feedback)
+- [x] Default Merge HF for all Monorepo Libraries
+- [x] Trie Library Generalization/Modularization (DB / Hash Function)
+- [x] UX focused Trie Library Refactor (Renamings / Customizability)
+- [x] Monorepo Package NPM Dependency Reduction Part I (security)
+- [x] Monorepo Adopt Stricter Code Formatting Rules (Linting) (security)
+- [x] GitPOAP Cooporation EthereumJS Monorepo
+- [x] Monorepo Geth Genesis Format Compatibility (VM/Tx/Block/Client)
+- [x] Monorepo Final Breaking Releases 🎉
+
+### Hardforks & EIPs
+
+- [x] Merge HF Spec Finalization
+- [x] Sepolia Merge HF Integration
+- [x] Merge HF Community Integration Support (Hardhat, Ganache, Other)
+
+### Research & Client
+
+- [x] SNAP Protocol Base Layer Implementation (Networking/devp2p)
+- [x] Client SNAP Protocol Synchronizer Draft
+
+### Portal Network
+
+- [x] Deeper Header Accumulator Integration (History -> getBlockByNumber, Header Proof Validation)
+- [x] Refactored RPC Method Exposure Base Layer
+- [x] First Draft of `portalnetwork` `ethers` compatible `JsonRpcProvider` integration 🎉
+- [x] Improved Portal Network Experimentation Console (Browser Client)
+- [x] History Network Receipt Integration
+
+### Ethers.js
+
+- [x] Integrated new ENS normalization specification
+- [x] EIP-712 Type Exports
+- [x] Continued Improved L2 Integration (Arbitrum/Optimism)
+
+## Q2 2022
+
+### DevEx & VM
+
+- [x] VM Improved L2 Modularization (custom Precompiles, separated VM/EVM)
+- [x] Expanded Chain Customizability (L2/Others) (extracted StateManager, encapsulated Blockchain consensus)
+- [x] Selected VM Performance Optimizations (not as far reaching as planned)
+- [x] Wide-reaching Code Clean-Up Work and Deprecations on various Libraries (Breaking Release Preparation)
+- [x] VM Native JavaScript BigInt Integration (performance / security)
+- [x] Crypto Primitives (Hash, Signature) Library Switch to modern audited Library (Noble) (security)
+- [x] Trie Library Database Abstraction
+- [x] Monorepo Package Unification (consistent @ethereumjs namespace)
+- [x] Monorepo Breaking Releases (Beta 1)
+
+### Hardforks & EIPs
+
+- [x] Merge HF Spec Update Implementation (Engine API / Beacon Sync)
+- [x] EIP-5133 GrayGlacier HF Support (Difficulty Bomb, Merge Preparation)
+- [x] EIP-3074 Authcall Implementation 
+
+### Research & Client
+
+- [x] Client "Grown-Up" Transaction Pool Integration
+- [x] Both lightweight sync + verkle tree implementation postponed (breaking release focus)
+
+### Portal Network
+
+- [x] Initial Android App (Portal Network PoC for Mobile Context)
+- [x] Header Gossip Subnetwork Integration 
+- [x] Stable communication with other clients (Fluffy/Trin) for sub networks from Q1
+- [x] Rendevous Protocol Integration (ENR request along NAT/Firewall issues)
+- [x] External ChainSafe DiscV5 library integration
+- [x] Browser-Support Analysis and PoC (Web-Storage)
+- [x] Specification Implementation Refactoring (dedicated Protocol class)
+- [x] Header Accumulator Spec Implementation (History Network)
+- [x] First Canonical Indices Protocol version
+- [x] Ultralight Electron App
+- [x] `portalnetwork` library API PoC (`getBlockByNumber` RPC Call)
+
+### Ethers.js
+
+- [x] Focus on tooling, especially on the playground and the toolkit
+- [x] Improved L2 Integration (Optimism/Matic)
 
 ## Q1 2022
 
