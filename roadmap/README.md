@@ -27,6 +27,7 @@ list for an overview of the initial roadmaps from the respective years.
 - [x] Client UX-focused RPC Improvements (eth_gasPrice, eth_feeHistory,...)
 - [x] Lodestar/EthereumJS CL/EL Client Combination Live Testing and Optimization
 - [x] Structural Dynamic Testnet Setup Automation / Post-Merge Testnet Improvements
+- [x] Verkle Trie "Stateless" State Management and Verkle Blocks Processing
 
 ### Portal Network
 
