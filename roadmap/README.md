@@ -29,6 +29,9 @@ list for an overview of the initial roadmaps from the respective years.
 ### Portal Network
 
 - Launch portalnetwork v1.0.0 with history/light client update/state network functionality
+- Improve Ultralight documentation and quickstart guide.
+- Maintain Ultralight public bootnodes and bridge nodes.
+- Update and improve Ultralight browser tools, demos, and documentation.
 - History Network Reference Production Integration Partnership (based on Q3 analysis)
 
 ### Ethers.js
@@ -56,8 +59,10 @@ list for an overview of the initial roadmaps from the respective years.
 
 ### Portal Network
 
-- Begin implementation of State Network prototype (or possible TX gossip)
-- Finish implementation of Rendezvous protocol in Discv5
+- [x] Deep testing and debugging of client interop in Portal-Hive
+- [x] Implement initial spec for Beacon Light Client Network
+- [x] Experimental integration of Portal and LightClient
+- [x] Convert Ultralight testing suite to vitest
 - History Network Reference Production Integration (e.g. EthOS, other) Analysis
 
 ### Ethers.js
@@ -94,7 +99,8 @@ list for an overview of the initial roadmaps from the respective years.
 ### Portal Network
 
 - Explore integration of Lodestar or Kevlar CL light client with Ultralight for feeding light client update data to Beacon Light Client Update Network
-- Build WebRTC transport layer for discv5 to allow direct p2p connections for browser clients
+- [x] Build WebRTC transport layer for discv5 to allow direct p2p connections for browser clients
+- [x] R&D of solutions to challenges in Merkle basic State Network design and client implementation
 - Begin implementation of Rendezvous protocol in Discv5
 
 ### Ethers.js
@@ -130,7 +136,7 @@ list for an overview of the initial roadmaps from the respective years.
 
 - Wrap up any loose ends from History Network implementation - (alpha version of portalnetwork module for chain history)
 - Implement prototype of Beacon light client update network
-- Begin exploration of WebRTC to allow for p2p discovery of browser clients using libp2p/waku gossip
+- [x] Begin exploration of WebRTC to allow for p2p discovery of browser clients using libp2p/waku gossip
 
 ### Ethers.js
 
