@@ -144,7 +144,7 @@ list for an overview of the initial roadmaps from the respective years.
 - [x] Much richer stats and tools to drill down into build.ethers.org for tracking changes, code coverage and testing (especially for auditing purposes)
 - [x] More documentation, especially regarding Ethereum basics, based on common issues; this will be open to additional contributors too
 - [x] Aggressive resolving and closing of GitHub issues and PRs; hopefully v6 will have resolved many of these, others can be migrated to discussions
-- Migrating to (or at least making a stronger presence) Mastodon for ethers for its advisories
+- Migrating to (or at least making a stronger presence) Mastodon and Warpcast for ethers for its advisories
 
 
 ## Q4 2022
