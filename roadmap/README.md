@@ -36,7 +36,7 @@ list for an overview of the initial roadmaps from the respective years.
 
 ### Ethers.js
 
-- This will be (likely) almost entirely focused on v7 features, refactoring and 
+- This will be (likely) almost entirely focused on v7 features, refactoring and abstracting
 - Migrating v6 ancillary packages to be v7-ready with collaborator assistance
 - Updating documentation for v7
 
@@ -69,7 +69,7 @@ list for an overview of the initial roadmaps from the respective years.
 
 - Ancillary libraries for Contract Wallets; a small (but vocal) group has been advocating for this, so it may be moved earlier; the goal is to get a working demo and then allow them to further contribute
 - More serious planning for v7, as I want to switch to a more regular annual release cycle to reduce the impact on version bumps by making more, smaller major releases
-- Expand the cookbook section with more real-world examples, with JS and Solidity; EIP-712, signing, tokens, etc.
+- [x] Expand the cookbook section with more real-world examples, with JS and Solidity; EIP-712, signing, tokens, etc.
 
 ## Q2
 
@@ -106,8 +106,8 @@ list for an overview of the initial roadmaps from the respective years.
 ### Ethers.js
 
 - Release tools.ethers.org, a tool to simplify many common debugging tasks as well as quickly testing open issues marked “investigate” (currently playground.ethers.org handles much of this, but tools is for more specific issues)
-- Begin opening up additional repositories, adding other external contributors to help with Network-specific v6 plugins and ancillary libraries like LedgerSigner
-- Migrate many “common” issues/discussions to the documentation cookbook section and Ethereum basics section and add links to the issues/discussions to these sections of the documentation
+- [x] Begin opening up additional repositories, adding other external contributors to help with Network-specific v6 plugins and ancillary libraries like LedgerSigner
+- [x] Migrate many “common” issues/discussions to the documentation cookbook section and Ethereum basics section and add links to the issues/discussions to these sections of the documentation
 
 ## Q1
 
@@ -141,9 +141,9 @@ list for an overview of the initial roadmaps from the respective years.
 ### Ethers.js
 
 - Documentation-specific pull request templates, GitHub actions and webforms to streamline (while retaining safety) user-contributed documentation changes to code
-- Much richer stats and tools to drill down into build.ethers.org for tracking changes, code coverage and testing (especially for auditing purposes)
-- More documentation, especially regarding Ethereum basics, based on common issues; this will be open to additional contributors too
-- Aggressive resolving and closing of GitHub issues and PRs; hopefully v6 will have resolved many of these, others can be migrated to discussions
+- [x] Much richer stats and tools to drill down into build.ethers.org for tracking changes, code coverage and testing (especially for auditing purposes)
+- [x] More documentation, especially regarding Ethereum basics, based on common issues; this will be open to additional contributors too
+- [x] Aggressive resolving and closing of GitHub issues and PRs; hopefully v6 will have resolved many of these, others can be migrated to discussions
 - Migrating to (or at least making a stronger presence) Mastodon for ethers for its advisories
 
 
@@ -333,7 +333,7 @@ Dedicated Projects:
 
 Ethers:
 
-- [ ] Ethers: ethers/v6, with an emphasis on using more moderns JavaScript features (ES5), more comprehensive TypeScript and ancillary packages (enabling easier external contributors)
+- [x] Ethers: ethers/v6, with an emphasis on using more moderns JavaScript features (ES5), more comprehensive TypeScript and ancillary packages (enabling easier external contributors)
 
 ## Q3 2021
 
