@@ -12,7 +12,7 @@ list for an overview of the initial roadmaps from the respective years.
 - [2023](./EF2023.md)
 - [2024](./EF2024.md) [ DRAFT, October 13 2023 ]
 
-## Q4
+## Q4 2023
 
 ### DevEx & VM
 
@@ -40,7 +40,7 @@ list for an overview of the initial roadmaps from the respective years.
 - Migrating v6 ancillary packages to be v7-ready with collaborator assistance
 - Updating documentation for v7
 
-## Q3
+## Q3 2023
 
 ### DevEx & VM
 
@@ -71,7 +71,7 @@ list for an overview of the initial roadmaps from the respective years.
 - More serious planning for v7, as I want to switch to a more regular annual release cycle to reduce the impact on version bumps by making more, smaller major releases
 - Expand the cookbook section with more real-world examples, with JS and Solidity; EIP-712, signing, tokens, etc.
 
-## Q2
+## Q2 2023
 
 ### DevEx & VM
 
@@ -109,7 +109,7 @@ list for an overview of the initial roadmaps from the respective years.
 - Begin opening up additional repositories, adding other external contributors to help with Network-specific v6 plugins and ancillary libraries like LedgerSigner
 - Migrate many “common” issues/discussions to the documentation cookbook section and Ethereum basics section and add links to the issues/discussions to these sections of the documentation
 
-## Q1
+## Q1 2023
 
 ### DevEx & VM
 
