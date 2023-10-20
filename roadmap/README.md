@@ -10,8 +10,144 @@ list for an overview of the initial roadmaps from the respective years.
 - [2021](./EF2021.md)
 - [2022](./EF2022.md)
 - [2023](./EF2023.md)
+- [2024](./EF2024.md) [ DRAFT, October 13 2023 ]
 
-## Q4 2022 (incomplete)
+## Q4 2023
+
+### DevEx & VM
+
+- [x] Breaking Monorepo Releases Community Support
+
+### Hardforks & EIPs
+
+- [x] Post-Shanghai EIP implementation Work
+
+### Research, Client & Testnets
+
+- [x] EthereumJS Client Lightclient Strategy and Production Roadmap (somewhat, lightclient paths more clear now, but still evolving)
+
+### Portal Network
+
+- Launch portalnetwork v1.0.0 with history/light client update/state network functionality
+- Improve Ultralight documentation and quickstart guide.
+- Maintain Ultralight public bootnodes and bridge nodes.
+- Update and improve Ultralight browser tools, demos, and documentation.
+- History Network Reference Production Integration Partnership (based on Q3 analysis)
+
+### Ethers.js
+
+- This will be (likely) almost entirely focused on v7 features, refactoring and 
+- Migrating v6 ancillary packages to be v7-ready with collaborator assistance
+- Updating documentation for v7
+
+## Q3 2023
+
+### DevEx & VM
+
+- [x] Final Breaking Monorepo Releases
+
+### Hardforks & EIPs
+
+- [x] EIP-4844 Robustness Work & Live Testing
+- [x] ~~EOF EIPs Robustness Work & Live Testing~~ (EOF stuff postponed, roadmap changes)
+
+### Research, Client & Testnets
+
+- [x] ~~Post-Shanghai Functional EIP/HF Testnet~~ (no, turned out EIP-4844 taking a lot more space than expected)
+- [x] EthereumJS Client Portal Network Integration Feasibility Analysis (somewhat: Lodestar/Ultralight integration)
+- [x] EthereumJS Client LES sync via engine API (Beacon Light Client) (somewhat: Lodestar/Ultralight integration -> CLient integration with Lodestar/Ultralight)
+
+### Portal Network
+
+- [x] Deep testing and debugging of client interop in Portal-Hive
+- [x] Implement initial spec for Beacon Light Client Network
+- [x] Experimental integration of Portal and LightClient
+- [x] Convert Ultralight testing suite to vitest
+- History Network Reference Production Integration (e.g. EthOS, other) Analysis
+
+### Ethers.js
+
+- Ancillary libraries for Contract Wallets; a small (but vocal) group has been advocating for this, so it may be moved earlier; the goal is to get a working demo and then allow them to further contribute
+- More serious planning for v7, as I want to switch to a more regular annual release cycle to reduce the impact on version bumps by making more, smaller major releases
+- Expand the cookbook section with more real-world examples, with JS and Solidity; EIP-712, signing, tokens, etc.
+
+## Q2 2023
+
+### DevEx & VM
+
+- [x] ~~VM/EVM Optimism L2 Support Integration (depends on Q1 analysis)~~ postponed, but some base work done in PR [#2713](https://github.com/ethereumjs/ethereumjs-monorepo/pull/2713)
+- [x] Monorepo-wide Node.js Buffer -> Uint8Array Switch (huge, but: Browser + React Compatibility!) 🎉
+- [x] Transaction Library Refactor (Modularize -> Typed Tx Diversification!) (later: Q3 2023)
+- [x] Monorepo-wide ESM Build Support (along Summer 2023 breaking releases)
+- [x] Breaking Monorepo Releases v7 (Beta)
+
+### Hardforks & EIPs
+
+- [x] EIP-4844 Shard Blob Transactions Spec Finalization (later, spec not finalized at that point)
+- [x] ~~EOF Implementation: EIP-4200 Static Relative Jumps~~ (EOF stuff postponed, roadmap changes)
+- [x] ~~EOF Implementation: EIP-4750 EOF Functions~~ (EOF stuff postponed, roadmap changes)
+- [x] Shanghai HF Preparations (Testnets, Developer Tools, Community Support)
+
+### Research, Client & Testnets
+
+- [x] EIP-4844 Shard Blob Transactions Multi-Client Testnet
+- [x] ~~Multi-client EOF-focused testnet~~ (EOF stuff postponed, roadmap changes)
+- [x] Verkle Tree Specification Updates
+- [x] ~~EthereumJS Client SNAP Sync Production Release~~ (no, takes longer than expected)
+- [x] Client In-browser sync feasibility analysis (Lodestar Light Client + Sepolia LES)
+
+### Portal Network
+
+- Explore integration of Lodestar or Kevlar CL light client with Ultralight for feeding light client update data to Beacon Light Client Update Network
+- [x] Build WebRTC transport layer for discv5 to allow direct p2p connections for browser clients
+- [x] R&D of solutions to challenges in Merkle basic State Network design and client implementation
+- Begin implementation of Rendezvous protocol in Discv5
+
+### Ethers.js
+
+- Release tools.ethers.org, a tool to simplify many common debugging tasks as well as quickly testing open issues marked “investigate” (currently playground.ethers.org handles much of this, but tools is for more specific issues)
+- Begin opening up additional repositories, adding other external contributors to help with Network-specific v6 plugins and ancillary libraries like LedgerSigner
+- Migrate many “common” issues/discussions to the documentation cookbook section and Ethereum basics section and add links to the issues/discussions to these sections of the documentation
+
+## Q1 2023
+
+### DevEx & VM
+
+- [x] VM/EVM Performance Improvements (Memory Management, Others)
+- [x] VM/EVM (Other) Post-Breaking Release API Optimizations
+- [x] VM/EVM Optimism L2 Support Feasibility Analysis (partly, see PR [#2713](https://github.com/ethereumjs/ethereumjs-monorepo/pull/2713) and related)
+- [x] EVM Standalong Capabilities (after VM/EVM extraction) (done a bit later along Summer 2023 breaking releases)
+
+### Hardforks & EIPs
+
+- [x] EIP-4844 Shard Blob Transactions Draft & Local Geth Testnet Integration
+- [x] EIP-4844 Shard Blob Transactions KZG Library Analysis & Integration
+- [x] EIP-4895 Beacon Chain Withdrawals (Shanghai) Spec Finalization
+
+### Research, Client & Testnets
+
+- [x] Integration of the EthereumJS Client with Verkle Testnets (Condrieu, Beverly Hills, and Future Ones)
+- [x] Verkle Trie "Stateless" State Management and Proof Verification
+- [x] Verkle Tree Specification Work & Performance Analysis
+- [x] EthereumJS Client SNAP Sync Draft Implementation (yes, but later)
+- [x] ~Reactivate Client Browser Build~ -> Stalled until active use case (statelessness)
+
+### Portal Network
+
+- Wrap up any loose ends from History Network implementation - (alpha version of portalnetwork module for chain history)
+- Implement prototype of Beacon light client update network
+- [x] Begin exploration of WebRTC to allow for p2p discovery of browser clients using libp2p/waku gossip
+
+### Ethers.js
+
+- Documentation-specific pull request templates, GitHub actions and webforms to streamline (while retaining safety) user-contributed documentation changes to code
+- Much richer stats and tools to drill down into build.ethers.org for tracking changes, code coverage and testing (especially for auditing purposes)
+- More documentation, especially regarding Ethereum basics, based on common issues; this will be open to additional contributors too
+- Aggressive resolving and closing of GitHub issues and PRs; hopefully v6 will have resolved many of these, others can be migrated to discussions
+- Migrating to (or at least making a stronger presence) Mastodon for ethers for its advisories
+
+
+## Q4 2022
 
 ### DevEx & VM
 
