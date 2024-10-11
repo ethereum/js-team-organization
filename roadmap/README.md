@@ -50,7 +50,34 @@ implementations.
 
 This makes up for a fully auditable JavaScript EVM for the first time and we plan to have an EVM audit done throughout 2025.
 
+### EIP Implementation & Testing (Expanded)
 
+The EthereumJS stack is historically being build up in a very modular way and is therefore well suited for EIP prototyping and
+early on integration. In 2024 was a year with a lot of protocol work to be done and our team increased its engagement here.
+
+Some examples are:
+
+- Pectra HF [devnet-3](https://notes.ethereum.org/@ethpandaops/pectra-devnet-3), prototyping (EIP-2935), lot of spec refinement work
+- devnet-4, previous EIP-7702 [test filling](https://github.com/ethereumjs/ethereumjs-monorepo/pull/3737)
+- Verkle [devnets](https://github.com/ethpandaops/verkle-devnets) participation, stateless block execution, spec work
+- EIP-6493 Stable Container [Prototyping](https://github.com/ethereumjs/ethereumjs-monorepo/pull/3452)
+
+Since autumn 2024 we are able to [fill execution-spec-tests](https://github.com/ethereum/execution-spec-tests/pull/752), which
+is the new test format for the Ethereum L1 protocol. We plan to build upon this new capability, which align well with our
+early-on EIP prototyping work and embed within the team in a way that we can regularly contribute new test cases throughout
+2025 and therefore do a substantial contribution to secure the protocol.
+
+### Ultralight / Portal Network
+
+For [Ultralight](https://github.com/ethereumjs/ultralight) respectively the Portal Network, 2024 was the year where all the pieces
+slowly came together. Existing specs like for the Portal history network were finalized and battle tested so that these
+parts can be leveraged for concrete integration projects like making EIP-4444 (prune historical block data) a reality.
+
+Since we have both an L1 as well as a Portal stack our team is well positioned to contribute with early prototyping and integration,
+which we have already started [here](https://github.com/ethereumjs/ethereumjs-monorepo/pull/3196) for EIP-4844.
+
+Our team is additionally providing early on implementations and help to refine and battle-test specs around newer networks
+within the Portal Network stack like the state and the beacon chain network.
 
 ### Ethers.js
 
