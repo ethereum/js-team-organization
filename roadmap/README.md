@@ -14,7 +14,7 @@ list for an overview of the initial roadmaps from the respective years.
 
 
 
-## Q4 2023
+## Q4 2023 Recap
 
 ### DevEx & VM
 
@@ -42,7 +42,7 @@ list for an overview of the initial roadmaps from the respective years.
 - Migrating v6 ancillary packages to be v7-ready with collaborator assistance
 - Updating documentation for v7
 
-## Q3 2023
+## Q3 2023 Recap
 
 ### DevEx & VM
 
@@ -73,7 +73,7 @@ list for an overview of the initial roadmaps from the respective years.
 - More serious planning for v7, as I want to switch to a more regular annual release cycle to reduce the impact on version bumps by making more, smaller major releases
 - Expand the cookbook section with more real-world examples, with JS and Solidity; EIP-712, signing, tokens, etc.
 
-## Q2 2023
+## Q2 2023 Recap
 
 ### DevEx & VM
 
@@ -111,7 +111,7 @@ list for an overview of the initial roadmaps from the respective years.
 - Begin opening up additional repositories, adding other external contributors to help with Network-specific v6 plugins and ancillary libraries like LedgerSigner
 - Migrate many “common” issues/discussions to the documentation cookbook section and Ethereum basics section and add links to the issues/discussions to these sections of the documentation
 
-## Q1 2023
+## Q1 2023 Recap
 
 ### DevEx & VM
 
@@ -149,7 +149,7 @@ list for an overview of the initial roadmaps from the respective years.
 - Migrating to (or at least making a stronger presence) Mastodon for ethers for its advisories
 
 
-## Q4 2022
+## Q4 2022 Recap
 
 ### DevEx & VM
 
@@ -180,7 +180,7 @@ list for an overview of the initial roadmaps from the respective years.
 - [x] Ethers v6 Release Candidate
 - [x] Ethers v6 Release Documentation Updates
 
-## Q3 2022
+## Q3 2022 Recap
 
 ### DevEx & VM
 
@@ -219,7 +219,7 @@ list for an overview of the initial roadmaps from the respective years.
 - [x] EIP-712 Type Exports
 - [x] Continued Improved L2 Integration (Arbitrum/Optimism)
 
-## Q2 2022
+## Q2 2022 Recap
 
 ### DevEx & VM
 
@@ -263,7 +263,7 @@ list for an overview of the initial roadmaps from the respective years.
 - [x] Focus on tooling, especially on the playground and the toolkit
 - [x] Improved L2 Integration (Optimism/Matic)
 
-## Q1 2022
+## Q1 2022 Recap
 
 ### DevEx & VM
 
@@ -312,7 +312,7 @@ list for an overview of the initial roadmaps from the respective years.
 - [x] Better IPFS support
 
 
-## Q4 2021
+## Q4 2021 Recap
 
 General Library Work:
 
@@ -337,7 +337,7 @@ Ethers:
 
 - [ ] Ethers: ethers/v6, with an emphasis on using more moderns JavaScript features (ES5), more comprehensive TypeScript and ancillary packages (enabling easier external contributors)
 
-## Q3 2021
+## Q3 2021 Recap
 
 General Library Work:
 
@@ -363,7 +363,7 @@ Ethers:
 - [x] Ethers: ethers issue and PR burn-down, closing issues and moving discussion issues to the discussions feature
 - [x] Ethers: new website, adding the new tools, starting with the Playground and Toolbox (stretch goal of the Wallet w/ transaction composer)
 
-## Q2 2021
+## Q2 2021 Recap
 
 - [x] EthereumJS VM: Block Builder API (Hardhat / Client), PR [#1158](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1158)
 - [x] EthereumJS: Post-Berlin ecosystem update work, e.g. PR [1206](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1206)
@@ -380,7 +380,7 @@ Ethers:
 
 - [x] Team: 1 new full-time and 2 new part-time hires
 
-## Q1 2021
+## Q1 2021 Recap
 
 - [x] EthereumJS: Clique PoA Protocol Integration, PR [#1032](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1032)
 - [x] EthereumJS: Custom Chain / L2 Improvements I, PR [#1034](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1034)
