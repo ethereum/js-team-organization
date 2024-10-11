@@ -10,7 +10,9 @@ list for an overview of the initial roadmaps from the respective years.
 - [2021](./EF2021.md)
 - [2022](./EF2022.md)
 - [2023](./EF2023.md)
-- [2024](./EF2024.md) [ DRAFT, October 13 2023 ]
+- [2024](./EF2024.md)
+
+
 
 ## Q4 2023
 
