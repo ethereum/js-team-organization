@@ -10,9 +10,84 @@ list for an overview of the initial roadmaps from the respective years.
 - [2021](./EF2021.md)
 - [2022](./EF2022.md)
 - [2023](./EF2023.md)
-- [2024](./EF2024.md) [ DRAFT, October 13 2023 ]
+- [2024](./EF2024.md)
 
-## Q4 2023
+
+## 2024 Recap
+
+In 2024 priorities shifted substantially over the year and some focus areas haven been downgraded substantially while others have been
+newly taken in. The following sections give a quick overview on the dynamics.
+
+### Classic EthereumJS Client Development (Downgraded)
+
+The EthereumJS [client](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client) is an indispensable research
+tool for EIP prototyping due to its highly modular structure. At the same time limits on classic usage became even more clear throughout
+the year, partly by the rise of (even) more performant L1 client alternatives like the Reth Rust-based client. We have therefore substantially downgraded
+implementation efforts on things like SNAP sync, a flat database layout for (stateful) state storage, a wider devp2p refactor or client 
+multithreading support, which initially had some stronger presence in our 2024 roadmap. Some of these might still be useful and followed
+upon on the sideline, though with less ressources applied.
+
+### Browser Support (Substantially Upgraded)
+
+JavaScript is THE programming language for the browser. Throughout the year it became clear that we had largely underappreciated one
+central browser-related topic and challenge around our libraries: the size of the bundles created from our libraries to be possible
+to be loaded in a web context. Especially for our EVM the bundles libraries (so: also including the 3rd-party dependencies) were several
+100KBs too large to get efficiently loaded within a website context. We have therefore significantly ramped up efforts here, restructured
+a lot of code to allow for removal of unnecessary code paths ("tree shaking") and removed unnecessary dependencies,
+culminating in our October/November 2024 breaking releases with bundle size reductions e.g. for our EVM of 60% and greater.
+
+Together with some other browser-related improvements these releases mark the first moment in time where the Ethereum L1 protocol
+stack is now fully ready to be used within web browsers without substantial limitations.
+
+### Security (Substantially Upgraded)
+
+This topic aligns very well with the above browser support one: since the libraries are now fully browser ready (and things like
+EIP-7702 account abstraction is on the horizon) they - and particularly the EthereumJS EVM - will likely be used for more
+"serious" and security-sensitive production use cases in the future. To take this into account we gave security a lot stronger
+emphasis than initially planned. The dependency reduction from above is also a big step towards a more secure JavaScript EVM.
+Through a collaboration with Paul Millr from [noble Crypto](https://paulmillr.com/noble/) we were able to replace remaining WASM
+implementations for EVM precompiles (BLS, BN254 (aka alt_BN128)) as well as the 4844-related KZG crypto with pure JavaScript
+implementations (the WASM code is not auditable and therfore less secure and even excluded to be used by policy by 
+security-sensitive products like MetaMask).
+
+This makes up for a fully auditable JavaScript EVM for the first time and we plan to have an EVM audit done throughout 2025.
+
+### EIP Implementation & Testing (Expanded)
+
+The EthereumJS stack is historically being build up in a very modular way and is therefore well suited for EIP prototyping and
+early on integration. 2024 was a year with a lot of protocol work to be done and our team increased its engagement here.
+
+Some examples are:
+
+- Pectra HF [devnet-3](https://notes.ethereum.org/@ethpandaops/pectra-devnet-3), prototyping (EIP-2935), lot of spec refinement work
+- devnet-4, previous EIP-7702 [test filling](https://github.com/ethereumjs/ethereumjs-monorepo/pull/3737)
+- Verkle [devnets](https://github.com/ethpandaops/verkle-devnets) participation, stateless block execution, spec work
+- EIP-6493 Stable Container [Prototyping](https://github.com/ethereumjs/ethereumjs-monorepo/pull/3452)
+
+Since autumn 2024 we are able to [fill execution-spec-tests](https://github.com/ethereum/execution-spec-tests/pull/752), which
+is the new test format for the Ethereum L1 protocol. We plan to build upon this new capability, which aligns well with our
+early-on EIP prototyping work and embed within the team in a way that we can regularly contribute new test cases throughout
+2025 and therefore do a substantial contribution to secure the protocol.
+
+### Ultralight / Portal Network
+
+For [Ultralight](https://github.com/ethereumjs/ultralight) respectively the Portal Network, 2024 was the year where all the pieces
+slowly came together. Existing specs like for the Portal history network were finalized and battle tested so that these
+parts can be leveraged for concrete integration projects like making EIP-4444 (prune historical block data) a reality.
+
+Since we have both an L1 as well as a Portal stack our team is well positioned to contribute with early prototyping, spec work and integration.
+
+In 2024 we e.g. have [started](https://github.com/ethereumjs/ethereumjs-monorepo/pull/3196) a prototype EIP-4844 integration,
+have done a lot of bootnode work to support the evolving Portal Network testnets and have substantially contributed to both
+spec definition and refinement of the state network by doing a first full implementation of the spec - see e.g. PRs [#539](https://github.com/ethereumjs/ultralight/pull/539) and [#649](https://github.com/ethereumjs/ultralight/pull/649). The state network is one of the core
+networks of the Portal Network data network suite with the goal to provide distributed and lightweight access to the Ethereum
+state, one of the harder problems to solve due to the (growing) size of the Ethereum network state.
+
+### Ethers.js
+
+Ethers.js is not part of the EF JavaScript team anymore but is now an independent entity within the EF.
+
+## Q4 2023 Recap
 
 ### DevEx & VM
 
@@ -40,7 +115,7 @@ list for an overview of the initial roadmaps from the respective years.
 - Migrating v6 ancillary packages to be v7-ready with collaborator assistance
 - Updating documentation for v7
 
-## Q3 2023
+## Q3 2023 Recap
 
 ### DevEx & VM
 
@@ -71,7 +146,7 @@ list for an overview of the initial roadmaps from the respective years.
 - More serious planning for v7, as I want to switch to a more regular annual release cycle to reduce the impact on version bumps by making more, smaller major releases
 - Expand the cookbook section with more real-world examples, with JS and Solidity; EIP-712, signing, tokens, etc.
 
-## Q2 2023
+## Q2 2023 Recap
 
 ### DevEx & VM
 
@@ -109,7 +184,7 @@ list for an overview of the initial roadmaps from the respective years.
 - Begin opening up additional repositories, adding other external contributors to help with Network-specific v6 plugins and ancillary libraries like LedgerSigner
 - Migrate many “common” issues/discussions to the documentation cookbook section and Ethereum basics section and add links to the issues/discussions to these sections of the documentation
 
-## Q1 2023
+## Q1 2023 Recap
 
 ### DevEx & VM
 
@@ -147,7 +222,7 @@ list for an overview of the initial roadmaps from the respective years.
 - Migrating to (or at least making a stronger presence) Mastodon for ethers for its advisories
 
 
-## Q4 2022
+## Q4 2022 Recap
 
 ### DevEx & VM
 
@@ -178,7 +253,7 @@ list for an overview of the initial roadmaps from the respective years.
 - [x] Ethers v6 Release Candidate
 - [x] Ethers v6 Release Documentation Updates
 
-## Q3 2022
+## Q3 2022 Recap
 
 ### DevEx & VM
 
@@ -217,7 +292,7 @@ list for an overview of the initial roadmaps from the respective years.
 - [x] EIP-712 Type Exports
 - [x] Continued Improved L2 Integration (Arbitrum/Optimism)
 
-## Q2 2022
+## Q2 2022 Recap
 
 ### DevEx & VM
 
@@ -261,7 +336,7 @@ list for an overview of the initial roadmaps from the respective years.
 - [x] Focus on tooling, especially on the playground and the toolkit
 - [x] Improved L2 Integration (Optimism/Matic)
 
-## Q1 2022
+## Q1 2022 Recap
 
 ### DevEx & VM
 
@@ -310,7 +385,7 @@ list for an overview of the initial roadmaps from the respective years.
 - [x] Better IPFS support
 
 
-## Q4 2021
+## Q4 2021 Recap
 
 General Library Work:
 
@@ -335,7 +410,7 @@ Ethers:
 
 - [ ] Ethers: ethers/v6, with an emphasis on using more moderns JavaScript features (ES5), more comprehensive TypeScript and ancillary packages (enabling easier external contributors)
 
-## Q3 2021
+## Q3 2021 Recap
 
 General Library Work:
 
@@ -361,7 +436,7 @@ Ethers:
 - [x] Ethers: ethers issue and PR burn-down, closing issues and moving discussion issues to the discussions feature
 - [x] Ethers: new website, adding the new tools, starting with the Playground and Toolbox (stretch goal of the Wallet w/ transaction composer)
 
-## Q2 2021
+## Q2 2021 Recap
 
 - [x] EthereumJS VM: Block Builder API (Hardhat / Client), PR [#1158](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1158)
 - [x] EthereumJS: Post-Berlin ecosystem update work, e.g. PR [1206](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1206)
@@ -378,7 +453,7 @@ Ethers:
 
 - [x] Team: 1 new full-time and 2 new part-time hires
 
-## Q1 2021
+## Q1 2021 Recap
 
 - [x] EthereumJS: Clique PoA Protocol Integration, PR [#1032](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1032)
 - [x] EthereumJS: Custom Chain / L2 Improvements I, PR [#1034](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1034)
