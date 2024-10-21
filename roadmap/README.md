@@ -1,17 +1,15 @@
 # EF JavaScript Team Roadmap
 
-On this page you can find our team roadmap.
+On this page you can find our team roadmap as well as recaps for the previous years. Roadmap updates are done throughout 
+the year and try to reflect our current state of planning and thinking ahead.
 
-Roadmap updates are done throughout the year and try to reflect our current state of planning and thinking ahead.
-
-This "live" roadmap document is based on the yearly roadmap submission we have done within the EF, see the following
-list for an overview of the initial roadmaps from the respective years.
+Roadmaps by year:
 
 - [2021](./EF2021.md)
 - [2022](./EF2022.md)
 - [2023](./EF2023.md)
 - [2024](./EF2024.md)
-
+- [2025](./EF2025.md) [ DRAFT ]
 
 ## 2024 Recap
 
