@@ -22,8 +22,8 @@ newly taken in. The following sections give a quick overview on the dynamics.
 
 The EthereumJS [client](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client) is an indispensable research
 tool for EIP prototyping due to its highly modular structure. At the same time limits on classic usage became even more clear throughout
-the year, partly by the rise of even more performant L1 client alternatives like Reth. We have therefore substantially downgraded
-implementation efforts on things like SNAP sync, a flat database layout for state storage, a wider devp2p refactor or client 
+the year, partly by the rise of (even) more performant L1 client alternatives like the Reth Rust-based client. We have therefore substantially downgraded
+implementation efforts on things like SNAP sync, a flat database layout for (stateful) state storage, a wider devp2p refactor or client 
 multithreading support, which initially had some stronger presence in our 2024 roadmap. Some of these might still be useful and followed
 upon on the sideline, though with less ressources applied.
 
@@ -31,8 +31,9 @@ upon on the sideline, though with less ressources applied.
 
 JavaScript is THE programming language for the browser. Throughout the year it became clear that we had largely underappreciated one
 central browser-related topic and challenge around our libraries: the size of the bundles created from our libraries to be possible
-to be loaded in a web context. Especially for our EVM these were several 100KBs too large to get efficiently loaded within a 
-website context. We have therefore significantly ramped up efforts here, restructured a lot of code and removed unnecessary dependencies,
+to be loaded in a web context. Especially for our EVM the bundles libraries (so: also including the 3rd-party dependencies) were several
+100KBs too large to get efficiently loaded within a website context. We have therefore significantly ramped up efforts here, restructured
+a lot of code to allow for removal of unnecessary code paths ("tree shaking") and removed unnecessary dependencies,
 culminating in our October/November 2024 breaking releases with bundle size reductions e.g. for our EVM of 60% and greater.
 
 Together with some other browser-related improvements these releases mark the first moment in time where the Ethereum L1 protocol
@@ -46,14 +47,15 @@ EIP-7702 account abstraction is on the horizon) they - and particularly the Ethe
 emphasis than initially planned. The dependency reduction from above is also a big step towards a more secure JavaScript EVM.
 Through a collaboration with Paul Millr from [noble Crypto](https://paulmillr.com/noble/) we were able to replace remaining WASM
 implementations for EVM precompiles (BLS, BN254 (aka alt_BN128)) as well as the 4844-related KZG crypto with pure JavaScript
-implementations.
+implementations (the WASM code is not auditable and therfore less secure and even excluded to be used by policy by 
+security-sensitive products like MetaMask).
 
 This makes up for a fully auditable JavaScript EVM for the first time and we plan to have an EVM audit done throughout 2025.
 
 ### EIP Implementation & Testing (Expanded)
 
 The EthereumJS stack is historically being build up in a very modular way and is therefore well suited for EIP prototyping and
-early on integration. In 2024 was a year with a lot of protocol work to be done and our team increased its engagement here.
+early on integration. 2024 was a year with a lot of protocol work to be done and our team increased its engagement here.
 
 Some examples are:
 
@@ -63,7 +65,7 @@ Some examples are:
 - EIP-6493 Stable Container [Prototyping](https://github.com/ethereumjs/ethereumjs-monorepo/pull/3452)
 
 Since autumn 2024 we are able to [fill execution-spec-tests](https://github.com/ethereum/execution-spec-tests/pull/752), which
-is the new test format for the Ethereum L1 protocol. We plan to build upon this new capability, which align well with our
+is the new test format for the Ethereum L1 protocol. We plan to build upon this new capability, which aligns well with our
 early-on EIP prototyping work and embed within the team in a way that we can regularly contribute new test cases throughout
 2025 and therefore do a substantial contribution to secure the protocol.
 
@@ -73,16 +75,17 @@ For [Ultralight](https://github.com/ethereumjs/ultralight) respectively the Port
 slowly came together. Existing specs like for the Portal history network were finalized and battle tested so that these
 parts can be leveraged for concrete integration projects like making EIP-4444 (prune historical block data) a reality.
 
-Since we have both an L1 as well as a Portal stack our team is well positioned to contribute with early prototyping and integration,
-which we have already started [here](https://github.com/ethereumjs/ethereumjs-monorepo/pull/3196) for EIP-4844.
+Since we have both an L1 as well as a Portal stack our team is well positioned to contribute with early prototyping, spec work and integration.
 
-Our team is additionally providing early on implementations and help to refine and battle-test specs around newer networks
-within the Portal Network stack like the state and the beacon chain network.
+In 2024 we e.g. have [started](https://github.com/ethereumjs/ethereumjs-monorepo/pull/3196) a prototype EIP-4844 integration,
+have done a lot of bootnode work to support the evolving Portal Network testnets and have substantially contributed to both
+spec definition and refinement of the state network by doing a first full implementation of the spec - see e.g. PRs [#539](https://github.com/ethereumjs/ultralight/pull/539) and [#649](https://github.com/ethereumjs/ultralight/pull/649). The state network is one of the core
+networks of the Portal Network data network suite with the goal to provide distributed and lightweight access to the Ethereum
+state, one of the harder problems to solve due to the (growing) size of the Ethereum network state.
 
 ### Ethers.js
 
 Ethers.js is not part of the EF JavaScript team anymore but is now an independent entity within the EF.
-
 
 ## Q4 2023 Recap
 
